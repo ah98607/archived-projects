@@ -1,0 +1,27 @@
+{
+  "name": "eatdaburger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ah98607/EatDaBurger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ah98607/EatDaBurger/issues"
+  },
+  "homepage": "https://github.com/ah98607/EatDaBurger#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.3.0",
+    "method-override": "^2.3.9",
+    "mysql": "^2.13.0"
+  }
+}

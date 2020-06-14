@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-md-4">
+    <ul>
+      {{#each burgers}}
+        {{#unless this.devoured}}
+          <li>
+            {{this.burger_name}}
+            <form action="/remove/{{this.id}}?_method=PUT" method="POST">
+              <input type="hidden" name="devour" value="true">
+              <button type="submit">Devour!</button>
+            </form>
+          </li>
+        {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
+  <div class="col-md-4">
+    <h1>Eat-Da-Burger!</h1>
+    <img src="http://cdn3-www.craveonline.com/assets/uploads/gallery/girls-of-carls-jr-mandatory/Audrina-Patridge-carls-jr.jpeg" width="300px">
+    <input type="text" id="newBurger"></input>
+    <button id="add">Add</button>
+  </div>
+  <div class="col-md-4">
+    <ul id="burgers">
+      {{#each burgers}}
+        {{#if this.devoured}}
+          <li>
+            {{this.burger_name}} (Devoured)
+          </li>
+        {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+</div>
+<script type="text/javascript">
+$("#add").click(function() {
+  console.log("Trying to add " + $("#newBurger").val());
+  $.post("/add/", {name: $("#newBurger").val()}).done(function() {
+    location.reload();
+  });
+});
+</script>

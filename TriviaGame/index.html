@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
+    <!-- personal css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Trivia Game</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Totally Trivia Trivia!</h1>
+    </div>
+    <button type="button" class="btn btn-success" id="start-button">Start!</button>
+    <div class="container" id="game-area">
+      <div class="row">
+        <span>Timer: </span><span id="timer"></span>
+      </div>
+      <div class="row" id="question">
+      </div>
+      <div class="row" id="options">
+          <div class="container">
+            <div class="row" id="opt0">
+            </div>
+            <div class="row" id="opt1">
+            </div>
+            <div class="row" id="opt2">
+            </div>
+            <div class="row" id="opt3">
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" id="winlose-image">
+      </div>
+    </div>
+
+    <div class="container" id="result-area">
+      <div class="row">
+        <span>Correct answers: </span><span id="correct-answers"></span>
+      </div>
+      <div class="row">
+        <span>Wrong answers: </span><span id="wrong-answers"></span>
+      </div>
+      <div class="row">
+        <span>Unanswered: </span><span id="unanswerd"></span>
+      </div>
+    </div>
+    <div class="row footer">
+      <hr>
+      <p>
+        Copyright Andy 2017
+      </p>
+    </div>
+    <!-- jquery libarry -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <!-- js -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+  </body>
+</html>

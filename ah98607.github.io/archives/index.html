@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name=”viewport” content=”width=device-width, initial-scale=1”>
+
+  <!-- prevent search engine from indexing this page -->
+  <meta name="robots" content="noindex">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/ui.js"></script>
+
+  <!-- bootstrap -->
+  <!--
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+  <!-- material css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+  <!-- my own stylesheet -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <title>Andy</title>
+</head>
+
+<body>
+  <!-- navbar a -->
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper navbar-top">
+        Andy
+      </div>
+    </nav>
+  </div>
+
+  <div id="main-block">
+    <div class="row" id="home">
+      <div class="col s2">
+      </div>
+      <div class="col s8">
+        <div id="my-jumbotron">
+          <img src="./assets/images/coding.png" width="500px" />
+        </div>
+        <div id="home-paragraph">
+          Experienced in <span id="home-paragraph-highlighted-span">Java, C++, JavaScript, Python, Web Development, jQuery, Node.js, React.js, Express.js, MySQL, MongoDB, Android Development, Git, Linux, Algorithms, Computer Architecture, Verilog, Functional Verification</span>
+        </div>
+        <div id="home-paragraph-footer">
+          Eligible to work in <img src="./assets/images/can.png" width="30px"> <img src="./assets/images/usa.png" width="30px"> <span id="home-paragraph-footer-sub-span">(H-1B)</span>
+        </div>
+      </div>
+      <div class="col s2">
+      </div>
+    </div>
+
+    <div class="row" id="education">
+      <div class="col s2">
+      </div>
+      <div class="col s8">
+        <div class="title-a">
+          UC Santa Barbara
+        </div>
+        <div class="title-b">
+          M.S., Computer Engineering (09/2013 - 06/2015)
+        </div>
+        <div class="title-a">
+          Shandong University
+        </div>
+        <div class="title-b">
+          B.S., Electrical Engineering (09/2009 - 06/2013)
+        </div>
+      </div>
+      <div class="col s2">
+      </div>
+    </div>
+
+    <div class="row" id="projects">
+      <div class="col s2">
+      </div>
+      <div class="col s8">
+        <div class="title-a">
+          Work4u
+        </div>
+        <div class="image-right"><img src="./assets/images/work4u.png" width="400px"></div>
+        <div>
+          - An application that helps users post and find local jobs like plumbing, gardening and home moving.<br>
+          - Designed the front-end UI with React and Material CSS.<br>
+          - Implemented the back-end with Node.js, Express server to handle requests and to manage database.<br>
+          - Implemented the user data model with MongoDB/Mongoose.<br>
+          - Integrated Auth0 for the user authentication.<br>
+          - Deployed the server/database on Heroku/mLab service platform.<br>
+          - <img src="assets/images/url_logo.png" width="20px"> <a href="https://work4u-dev.herokuapp.com">https://work4u-dev.herokuapp.com</a><br>
+          - <img src="assets/images/github_logo_2.jpg" width="20px"> <a href="https://github.com/Goosetaculous/work4u">https://github.com/Goosetaculous/work4u</a>
+        </div>
+        <div class="title-a">
+          Texture Capturing, 3D Rendering and Augmented Reality
+        </div>
+        <div class="image-right"></div>
+        <div>
+          - Implemented an Android application that rendered virtual 3D objects on a 2D map.<br>
+          - Utilized OpenGL to capture texture from 2D images and to generate 3D models.<br>
+          - Rendered 3D models using Vuforia Augmented Reality SDK and Android C++ Native Development Kit (NDK).<br>
+          - <img src="assets/images/url_logo.png" width="20px"> <a href="https://sites.google.com/site/android3dbuilding">https://sites.google.com/site/android3dbuilding</a><br> (project website and demo)
+        </div>
+        <div class="title-a">
+          MVC, Most Valuable Coder
+        </div>
+        <div class="image-right"><img src="./assets/images/mvc.png" width="400px"></div>
+        <div>
+          - An online JavaScript code judging system in which users can type JavaScript code. The app verifies the code at the back-end with test vectors to determine if user code is correct, wrong or contains syntax errors.<br>
+          - Implemented the user ranking system based on performance data of users in database.<br>
+          - Technologies used include jQuery, Node.js, Express.js, Handlebars.js (template engine) and MySQL/Sequelize.<br>
+          - Deployed the server/database on Heroku/JawsDB service platform.<br>
+          - <img src="assets/images/url_logo.png" width="20px"> <a href="https://mvc-most-valuable-coder.herokuapp.com">https://mvc-most-valuable-coder.herokuapp.com</a><br>
+          - <img src="assets/images/github_logo_2.jpg" width="20px"> <a href="https://github.com/ah98607/mvc-most-valuable-coder">https://github.com/ah98607/mvc-most-valuable-coder</a>
+        </div>
+        <div class="title-a">
+          Dogepile
+        </div>
+        <div class="image-right"><img src="./assets/images/dogepile.png" width="400px"></div>
+        <div>
+          - An application that helps dog owners search for dog-friendly venues nearby, filter searched results and show Google map/direction.<br>
+          - Implemented the front-end logic with jQuery and Materialize CSS.<br>
+          - Developed the database on Google Firebase.<br>
+          - Obtained data using APIs of  Google Map, Yelp, Meetup.<br>
+          - <img src="assets/images/url_logo.png" width="20px"> <a href="https://jhuynh85.github.io/Dogepile">https://jhuynh85.github.io/Dogepile</a><br>
+          - <img src="assets/images/github_logo_2.jpg" width="20px"> <a href="https://github.com/jhuynh85/Dogepile">https://github.com/jhuynh85/Dogepile</a>
+        </div>
+      </div>
+      <div class="col s2">
+      </div>
+    </div>
+
+    <div class="row" id="employment">
+      <div class="col s2">
+      </div>
+      <div class="col s8">
+        <div class="title-a">
+          <a href="https://www.qualcomm.com/">Qualcomm</a>
+        </div>
+        <div class="title-b">
+          Test Development Engineer (05/2015 - present)<br>
+          Test Development Intern (06/2014 - 09/2014)
+        </div>
+        <div>
+          - Developed native driver library, testing tools using C/C++, SystemVerilog and Python.<br>
+          - Integrated a third-party SDK to develop test automation and maintained related code templates and configuration database.<br>
+          - Developed post-simulation log parsers and tracked test regression status.<br>
+          - Worked with hardware developers debugging issues found and analyzing functional coverage.
+        </div>
+      </div>
+      <div class="col s2">
+      </div>
+    </div>
+  </div>
+  <!-- nabbar b -->
+  <div class="navbar-b">
+    <div class="col s12"><!--
+      <span><a class="center-nav-buttons" id="home-button" href="">Home</a></span>
+      <span><a class="center-nav-buttons" id="education-button" href="">Education</a></span>
+      <span><a class="center-nav-buttons" id="projects-button" href="">Projects</a></span>
+      <span><a class="center-nav-buttons" id="employment-button" href="">Employment</a></span>
+      <span>
+        <img src="assets/images/pdf_icon.png" width="20px">
+        <a class="center-nav-buttons" id="resume-button" href="">Resume</a>
+      </span>-->
+      <span>
+        <a class="center-nav-buttons" id="github-button" href=""><img src="assets/images/github_logo.png" width="28px"></a>
+      </span>
+      <span>
+        <a class="center-nav-buttons" id="linkedin-button" href=""><img src="assets/images/linkedin_logo.png" width="28px"></a>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  Commercial Use Prohibited<br>© 2018 Andy
+</div>
+</body>
+</html>

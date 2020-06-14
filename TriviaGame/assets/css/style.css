@@ -1,0 +1,35 @@
+body {
+	font-size: 16px;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	background: url("../images/body-background.jpg");
+	color: white;
+}
+
+#question {
+	font-family: 'Ravi Prakash', cursive;
+	color: orange;
+	font-size: 30px;
+}
+
+#options {
+	font-size: 20px;
+}
+
+.jumbotron {
+	background: url("") no-repeat center center;
+	background-size: 100% auto;
+	text-align: center
+}
+
+.footer {
+	margin: 20px;
+	font-size: 12px;
+}
+
+#timer {
+	font-family: monospace;
+	font-size: 80px;
+	color: red;
+}

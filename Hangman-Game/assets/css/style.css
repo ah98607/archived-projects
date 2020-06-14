@@ -1,0 +1,35 @@
+body {
+	background: black;
+	color: white;
+	font-size: 16px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.jumbotron {
+	background: url("../images/gallows.jpg") no-repeat center center;
+	background-size: 100% auto;
+	color: orange;
+	text-align: center
+}
+
+.well {
+	color: black;
+	font-family: 'Droid Serif', serif;
+	font-size: 75px;
+}
+
+#game-result {
+	font-family: 'Droid Serif', serif;
+	font-size: 40px;
+}
+
+.footer {
+	text-align: center;
+	margin: 50px;
+	font-size: 12px;
+}
+
+.large-letter {
+	font-size: 150%;
+}

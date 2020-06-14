@@ -1,0 +1,45 @@
+DROP DATABASE IF EXISTS bamazon_db;
+CREATE DATABASE bamazon_db;
+USE bamazon_db;
+
+CREATE TABLE items (
+  item_id INTEGER(10) AUTO_INCREMENT,
+  product_name VARCHAR(50) NOT NULL,
+  department_name VARCHAR(50) NOT NULL,
+  price INTEGER(10) NOT NULL,
+  stock_quantity INTEGER(10) NOT NULL,
+  product_sales INTEGER(100) NOT NULL,
+  PRIMARY KEY(item_id)
+);
+
+CREATE TABLE departments (
+  department_id INTEGER(10) AUTO_INCREMENT,
+  department_name VARCHAR(50) NOT NULL,
+  over_head_costs INTEGER(10) NOT NULL,
+  PRIMARY KEY(department_id)
+);
+
+INSERT INTO items (product_name, department_name, price, stock_quantity, product_sales) VALUES ("basketball", "sports", 50, 10, 0);
+INSERT INTO items (product_name, department_name, price, stock_quantity, product_sales) VALUES ("football", "sports", 45, 10, 0);
+INSERT INTO items (product_name, department_name, price, stock_quantity, product_sales) VALUES ("coffee", "food", 4, 10, 0);
+INSERT INTO items (product_name, department_name, price, stock_quantity, product_sales) VALUES ("laptop", "electronics", 1000, 10, 0);
+INSERT INTO items (product_name, department_name, price, stock_quantity, product_sales) VALUES ("toothpaste", "health", 3, 10, 0);
+
+INSERT INTO departments(department_name, over_head_costs) VALUES ("sports", 100);
+INSERT INTO departments(department_name, over_head_costs) VALUES ("food", 100);
+INSERT INTO departments(department_name, over_head_costs) VALUES ("electronics", 2000);
+INSERT INTO departments(department_name, over_head_costs) VALUES ("health", 200);
+
+#SELECT
+#dp.department_id,
+#dp.department_name,
+#dp.over_head_costs,
+#SUM(it.product_sales),
+#SUM(it.product_sales) - dp.over_head_costs
+#FROM 
+#departments AS dp
+#INNER JOIN
+#items AS it
+#ON it.department_name = dp.department_name
+#GROUP BY department_id
+

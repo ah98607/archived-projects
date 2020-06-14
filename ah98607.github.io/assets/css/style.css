@@ -1,0 +1,58 @@
+body {
+  background: white;
+}
+
+.nav-wrapper {
+  background: white;
+  text-align: center;
+  color: grey;
+  font-size: 100%;
+  font-family: 'Dosis', sans-serif;
+}
+
+.nav-span {
+  margin: 0px 4px 0px 4px;
+}
+
+#main-block {
+  margin: 1% 0 0 0;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 18px;
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+}
+
+.content {
+  font-size: 20px;
+  font-family: 'Abel', sans-serif;
+}
+
+.paragraph {
+  margin: 1% 0 0 0;
+}
+
+.carousel {
+  width: 100%;
+  padding: 0;
+}
+
+.carousel-item {
+  width: 45% !important;
+  margin: 0 !important;
+}
+
+#footer {
+  text-align: center;
+  color: grey;
+  margin: 0 0 1% 0;
+  padding-bottom: 2%;
+  font-size: 12px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.footer-img {
+  width: 80px;
+}

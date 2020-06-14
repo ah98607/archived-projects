@@ -1,0 +1,43 @@
+body {
+	font-size: 16px;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+.jumbotron {
+	background: url("") no-repeat center center;
+	background-size: 100% auto;
+	text-align: center
+}
+
+.footer {
+	margin: 20px;
+	font-size: 12px;
+}
+
+.crystal-image {
+	width: 200px;
+}
+
+.crystal-selected {
+	border-bottom-style: solid;
+	border-bottom-color: brown;
+	border-bottom-width: medium;
+}
+
+.fixed-height {
+	height: 250px;
+}
+
+#target-number {
+	color: orange;
+	font-weight: bold;
+	font-size: :20px;
+}
+
+#current-number {
+	color: green;
+	font-weight: bold;
+	font-size: :20px;
+}

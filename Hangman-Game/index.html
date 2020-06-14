@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Hangman 2017 - Andy</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h2>Hangman 2017 - Andy</h2>
+      <p>Test your vocabulary!</p>
+      <audio id="music"><source src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Ludwig_van_Beethoven_-_Symphonie_5_c-moll_-_1._Allegro_con_brio.ogg" type="audio/ogg"></audio>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img id = "gallow-image" src="assets/images/hangman-before.jpg" width="350px">
+        </div>
+        <div class="col-md-8">
+          <div id="remaning-attempts"></div>
+          <div class="progress">
+            <div id="health-bar" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+            </div>
+          </div>
+          <div id="tips" class="alert alert-warning"></div>
+          <div id="game-result"></div>
+          <div id="play-ground" class="well"></div>
+          <button id="reset" type="button" class="btn btn-warning">Reset</button>
+          <button id="mute" type="button" class="btn-primary">Mute/Unmute Music</button>
+        </div>
+      </div>
+    </div>
+    <div class="row footer">
+      <hr>
+      <p>
+        Copyright Andy 2017
+      </p>
+      <p>
+        Music "Ludwig van Beethoven - Symphonie 5" is provided by WikiMedia Commons<br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/EFF_Logo.svg" width="20px"> Licensed under the EFF: Open Audio License version 1
+      </p>
+      <p>
+        <img src="http://getbootstrap.com/assets/brand/bootstrap-solid.svg" width="20px"> CSS framework is provided by Bootstrap
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+  </body>
+</html>

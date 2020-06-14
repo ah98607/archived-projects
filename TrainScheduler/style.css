@@ -1,0 +1,9 @@
+.jumbotron {
+	background: url("train.jpg") no-repeat center center;
+	height: 300px;
+	color: orange;
+}
+
+.update-button, .remove-button {
+	margin: 2px;
+}

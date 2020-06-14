@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans" rel="stylesheet">
+    <!-- personal css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Crystal Collector</title>
+  </head>
+  <body>
+    <audio id="music"><source src="https://upload.wikimedia.org/wikipedia/en/c/c3/Super_Mario_Bros._theme.ogg" type="audio/ogg"></audio>
+    <div class="jumbotron">
+      <h1>Crystal Collector</h1>
+      <h2 id="result"></h2>
+      <p>
+        <span>Wins: </span><span id="wins"></span>; Loses: </span><span id="loses"></span>
+        <br>
+        <span>Your target number is </span><span id="target-number"></span>
+        <br>
+        <span>Your current number is </span><span id="current-number"></span>
+      </p>
+    </div>
+    <div class="container">
+      <div class="row fixed-height">
+        <div class="col-md-3">
+          <img class="crystal-image" src="assets/images/crystal.ico" value="0">
+        </div>
+        <div class="col-md-3">
+          <img class="crystal-image" src="assets/images/crystal.ico" value="1">
+        </div>
+        <div class="col-md-3">
+          <img class="crystal-image" src="assets/images/crystal.ico" value="2">
+        </div>
+        <div class="col-md-3">
+          <img class="crystal-image" src="assets/images/crystal.ico" value="3">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <button type="button" class="btn btn-warning" id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+    <div class="row footer">
+      <hr>
+      <p>
+        Copyright Andy 2017
+      </p>
+    </div>
+    <!-- jquery libarry -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <!-- js -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+  </body>
+</html>

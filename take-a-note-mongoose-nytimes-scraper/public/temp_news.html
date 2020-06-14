@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Scraping With Mongoose</title>
+</head>
+<body>
+
+  <!-- top navbar -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        Mongo NYT Scraper
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Saved Articles</a></li>
+        <li class="active"><a href="temp_news.html">Scrape Latest News</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- news list -->
+  <div class="row">
+    <div class="col-md-12">
+      <div id="temp-news">
+      </div>
+    </div>
+  </div>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- bootstrap -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- private css -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- private js -->
+  <script src="temp_news.js"></script>
+</body>
+</html>

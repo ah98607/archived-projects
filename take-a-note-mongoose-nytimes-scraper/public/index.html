@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Scraping With Mongoose</title>
+</head>
+<body>
+
+  <!-- top navbar -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        Mongo NYT Scraper
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Saved Articles</a></li>
+        <li><a href="temp_news.html">Scrape Latest News</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- news list -->
+  <div class="row">
+    <div class="col-md-12">
+      <div id="scraped-news">
+      </div>
+    </div>
+  </div>
+
+  <!-- bootstrap modal for notes -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="article-id-modal"></h4>
+        </div>
+        <div class="modal-body">
+          <p id="article-note"></p>
+          <textarea class="form-control" rows="5" id="new-article-note" placeholder="Add or update a note"></textarea>
+          <button type="button" class="btn btn-success" id="add-update-note-btn">Add/Update</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- bootstrap -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- private css -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- private js -->
+  <script src="app.js"></script>
+</body>
+</html>
