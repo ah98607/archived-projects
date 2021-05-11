@@ -20,7 +20,7 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "express-handlebars": "^3.0.0",
-    "handlebars": "^4.5.3",
+    "handlebars": "^4.7.7",
     "method-override": "^2.3.9",
     "mysql": "^2.13.0"
   }
